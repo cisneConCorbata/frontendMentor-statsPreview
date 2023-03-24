@@ -120,7 +120,7 @@ h2 {
     70% {content: '7k';}
     80% {content: '8k';}
     90% {content: '9k';}
-    100% {content: '';}
+    100% {content: '10k+';}
 }
 
 @keyframes templates {
@@ -144,7 +144,7 @@ h2 {
     85% {content: '265';}
     90% {content: '281';}
     95% {content: '296';}
-    100% {content: '';}
+    100% {content: '314';}
 }
 
 @keyframes queries {
@@ -173,7 +173,7 @@ h2 {
     91% {content: '11.0m';}
     95% {content: '11.5m';}
     97% {content: '12.0m';}
-    100% {content: ''}
+    100% {content: '12m+'}
 }
 
 @media (max-width: 1024px) {
