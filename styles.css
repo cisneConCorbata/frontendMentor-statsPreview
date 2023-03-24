@@ -24,7 +24,7 @@ h1, p, .stats, .element {
     padding-bottom: 10px;
 }
 
-h1, h2 {
+h1, .head2 {
     font-family: 'Inter', sans-serif;
     color: hsl(0, 0%, 100%);
 }
@@ -33,7 +33,7 @@ h1 {
     font-size: 32px;
 }
 
-h2 {
+.head2 {
     font-size: 25px;
 }
 
@@ -88,21 +88,21 @@ h2 {
     text-align: center;
 }
 
-.companies h2::before {
+.companies .head2::before {
     content: '10k+';
     animation-name: companies;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
-.templates h2::before {
+.templates .head2::before {
     content: '314';
     animation-name: templates;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
 }
 
-.queries h2::before {
+.queries .head2::before {
     content: '12m+';
     animation-name: queries;
     animation-duration: 2s;
