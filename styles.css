@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    background-color: hsl(233, 47%, 7%);
+    text-align: left;
+    font-size: 15px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1, p, .stats, .element {
+    padding-bottom: 10px;
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 400px;
+}
+
+.text {
+    margin-bottom: 35px;
+}
+
+.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+.info {
+    padding: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px 0 0 5px;
+}
+
+.tags {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.overlay, .header {
+    border-radius: 0px 5px 5px 0;
+    height: 100%;
+}
+
+.overlay {
+    background: hsl(277, 64%, 61%);
+    width: 70%;
+}
+
+.header {
+    background: url(./images/image-header-desktop.jpg) center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.stats {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.companies h2::before {
+    content: '10k+';
+    animation-name: companies;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.templates h2::before {
+    content: '314';
+    animation-name: templates;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.queries h2::before {
+    content: '12m+';
+    animation-name: queries;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes companies {
+    0% {content: '0k';}
+    10% {content: '1k';}
+    20% {content: '2k';}
+    30% {content: '3k';}
+    40% {content: '4k';}
+    50% {content: '5k';}
+    60% {content: '6k'}
+    70% {content: '7k';}
+    80% {content: '8k';}
+    90% {content: '9k';}
+    100% {content: '10k+';}
+}
+
+@keyframes templates {
+    0% {content: '0';}
+    5% {content: '15';}
+    10% {content: '31';}
+    15% {content: '46';}
+    20% {content: '62';}
+    25% {content: '77';}
+    30% {content: '93';}
+    35% {content: '108';}
+    40% {content: '124';}
+    45% {content: '139';}
+    50% {content: '157';}
+    55% {content: '162';}
+    60% {content: '188'}
+    65% {content: '203';}
+    70% {content: '219';}
+    75% {content: '234';}
+    80% {content: '250';}
+    85% {content: '265';}
+    90% {content: '281';}
+    95% {content: '296';}
+    100% {content: '314';}
+}
+
+@keyframes queries {
+    0% {content: '0m';}
+    4% {content: '0.5m';}
+    8% {content: '1.0m';}
+    12% {content: '1.5m';}
+    16% {content: '2.0m';}
+    20% {content: '2.5m';}
+    25% {content: '3.0m';}
+    29% {content: '3.5m';}
+    33% {content: '4.0m';}
+    37% {content: '4.5m';}
+    41% {content: '5.0m';}
+    45% {content: '5.5m';}
+    50% {content: '6.0m';}
+    54% {content: '6.5m';}
+    58% {content: '7.0m';}
+    62% {content: '7.5m';}
+    66% {content: '8.0m';}
+    70% {content: '8.5m';}
+    75% {content: '9.0m';}
+    79% {content: '9.5m';}
+    83% {content: '10.0m';}
+    87% {content: '10.5m';}
+    91% {content: '11.0m';}
+    95% {content: '11.5m';}
+    97% {content: '12.0m';}
+    100% {content: '12m+'}
+}
+
+@media (max-width: 1024px) {
+
+.container {
+    width: 80%;
+}
+
+.overlay {
+    width: 70%;
+}
+
+}
+
+@media (max-width: 768px) {
+
+body {
+    text-align: center;
+}
+
+.container {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.info {
+    border-radius: 0px 0 5px 5px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.overlay, .header {
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+}
+
+.header {
+    background: url(./images/image-header-mobile.jpg) center;
+    height: 100%;
+}
+
+.stats {
+    width: 100%;
+    flex-direction: column;
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+}
