@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/cisneConCorbata/frontendMentor-statsPreview](https://github.com/cisneConCorbata/frontendMentor-statsPreview)
+- Live Site URL: [https://cisneconcorbata.github.io/frontendMentor-statsPreview/](https://cisneconcorbata.github.io/frontendMentor-statsPreview/)
 
 ## My process
 
