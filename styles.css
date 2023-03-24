@@ -36,6 +36,8 @@ h1 {
 .element {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .head2 {
