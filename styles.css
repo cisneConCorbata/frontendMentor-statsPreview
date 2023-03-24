@@ -33,8 +33,12 @@ h1 {
     font-size: 32px;
 }
 
-.head2 {
+.element {
     display: flex;
+    flex-direction: row;
+}
+
+.head2 {
     font-weight: 700;
     font-size: 25px;
 }
